@@ -11,9 +11,15 @@ This repository contains my get_next_line project, an assignment from the first 
 This project is only asking for a function and not a working program, so you cannot compile it unless you add a main function like this one:
 
 ```C
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+
 #ifndef BUFFER_SIZE
 # define BUFFER_SIZE 42
 #endif
+
+char *get_next_line(int fd);
 
 int main(int argc, char **argv)
 {
@@ -56,6 +62,11 @@ int main(int argc, char **argv)
     return (0);
 }
 ```
+
+## Examples
+
+Using the main in this repo:
+![Get_next_line example](https://i.ibb.co/zWWyR9Wh/image.png)
 
 ## Note on Project State
 

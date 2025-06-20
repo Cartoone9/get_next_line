@@ -63,6 +63,8 @@ int main(int argc, char **argv)
 }
 ```
 
+The get_next_line function supports multiple file descriptors up to FD_MAX (defined as 512 in get_next_line.h) but this main function is only testing a single file at a time.
+
 ## Examples
 
 Using the main provided above:
@@ -71,6 +73,10 @@ Using the main provided above:
 ## Note on Project State
 
 All projects from my 42 cursus are preserved in their state immediately following their final evaluation. While they may contain mistakes or stylistic errors, I've chosen not to alter them. This approach provides a clear and authentic timeline of my progress and learning journey as a programmer.
+
+## Notable errors
+
+In the function ft_fill_stash, the malloc() isn't protected.
 
 ## License
 

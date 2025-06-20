@@ -8,7 +8,54 @@ This repository contains my get_next_line project, an assignment from the first 
 
 ## Usage
 
-This project is only asking for a function and not a working program, so you cannot compile it unless you add a main.
+This project is only asking for a function and not a working program, so you cannot compile it unless you add a main function like this one:
+
+```C
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 42
+#endif
+
+int main(int argc, char **argv)
+{
+    int     fd;
+    char    *line;
+    int     line_count = 0;
+
+    if (argc != 2)
+    {
+        write(2, "Usage: ./get_next_line <file_path>\n", 35);
+        return (1);
+    }
+
+    fd = open(argv[1], O_RDONLY);
+    if (fd == -1)
+    {
+        perror("Error opening file");
+        return (1);
+    }
+
+    printf("--- Testing get_next_line with file: %s ---\n", argv[1]);
+    printf("BUFFER_SIZE: %d\n", BUFFER_SIZE);
+    printf("---------------------------------------\n");
+
+    while ((line = get_next_line(fd)) != NULL)
+    {
+        line_count++;
+        printf("Line %d: %s", line_count, line);
+        free(line);
+    }
+
+    if (close(fd) == -1)
+    {
+        perror("Error closing file");
+        return (1);
+    }
+
+    printf("---------------------------------------\n");
+    printf("Total lines read: %d\n", line_count);
+    return (0);
+}
+```
 
 ## Note on Project State
 

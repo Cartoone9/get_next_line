@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 
     if (argc != 2)
     {
-        write(2, "Usage: ./get_next_line <file_path>\n", 35);
+        fprintf(stderr, "Usage: %s <file_path>\n", argv[0]);
         return (1);
     }
 
@@ -65,7 +65,7 @@ int main(int argc, char **argv)
 
 ## Examples
 
-Using the main in this repo:
+Using the main provided above:
 ![Get_next_line example](https://i.ibb.co/zWWyR9Wh/image.png)
 
 ## Note on Project State

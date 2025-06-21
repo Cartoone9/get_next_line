@@ -76,7 +76,7 @@ All projects from my 42 cursus are preserved in their state immediately followin
 
 ## Notable errors
 
-In the function ft_fill_stash, the malloc() isn't protected.
+In the function ft_fill_stash, the malloc isn't protected.
 
 ## License
 

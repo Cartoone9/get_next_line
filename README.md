@@ -65,7 +65,7 @@ int main(int argc, char **argv)
 
 The get_next_line function supports multiple file descriptors up to `FD_MAX` (defined as 512 in `get_next_line.h`) but this main function is only testing a single file at a time.
 
-## Examples
+## Example
 
 Using the main provided above:
 ![Get_next_line example](https://i.ibb.co/zWWyR9Wh/image.png)

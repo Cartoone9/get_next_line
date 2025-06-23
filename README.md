@@ -67,7 +67,7 @@ The get_next_line function supports multiple file descriptors up to `FD_MAX` (de
 
 ## Example
 
-Using the main provided above:
+Using the main provided above:  
 ![Get_next_line example](https://i.ibb.co/zWWyR9Wh/image.png)
 
 ## Note on Project State

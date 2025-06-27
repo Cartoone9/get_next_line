@@ -6,6 +6,15 @@
 
 This repository contains my get_next_line project, an assignment from the first circle of 42 School. The main goal was to build a function that could read text, line by line, from a given file. This project really helped solidify my understanding of how to handle files, the ins and outs of static variables, and smart ways to manage buffers in C using the stack.
 
+## Table of Contents
+
+- [About](#get_next_line)
+- [Usage](#usage)
+- [Example](#example)
+- [Note on Project State](#note-on-project-state)
+- [Known Issues & Fix Suggestions](#known-issues--fix-suggestions)
+- [License](#license)
+  
 ## Usage
 
 This project is only asking for a function and not a working program, so you cannot compile it unless you add a main function like this one:
